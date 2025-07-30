@@ -1,9 +1,7 @@
-import { titleFont } from "@/config/fonts";
+import { Title } from "@/components";
 
-export default function ShopPage() {
+export default function Home() {
   return (
-    <main className="">
-      <h1 className={`${titleFont.className} text-4xl font-bold`}>Shop Page</h1>
-    </main>
+    <Title title="Tienda" subtitle="Todos los productos" className="mb-2" />
   );
 }

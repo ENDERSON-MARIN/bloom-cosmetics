@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { titleFont } from "@/config/fonts";
 
 import "./globals.css";
-import { TopMenu } from "../components/ui/top-menu/TopMenu";
 
 export const metadata: Metadata = {
   title: "Bloom | Cosmetics",
@@ -17,7 +16,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${titleFont} antialiased`}>
-        <TopMenu />
         {children}
       </body>
     </html>
