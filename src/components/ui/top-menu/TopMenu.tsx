@@ -4,10 +4,10 @@ import Link from "next/link";
 import { IoSearchOutline, IoCartOutline } from "react-icons/io5";
 
 import { titleFont } from "@/config/fonts";
-// import { useUIStore } from "@/store";
+import { useUIStore } from "@/store";
 
 export const TopMenu = () => {
-  //   const openSideMenu = useUIStore((state) => state.openSideMenu);
+  const openSideMenu = useUIStore((state) => state.openSideMenu);
 
   return (
     <nav className="flex px-5 justify-between items-center w-full">
@@ -15,7 +15,7 @@ export const TopMenu = () => {
       <div>
         <Link href="/">
           <span className={`${titleFont.className} antialiased font-bold`}>
-            Bloom
+            Teslo
           </span>
           <span> | Shop</span>
         </Link>
@@ -59,7 +59,7 @@ export const TopMenu = () => {
         </Link>
 
         <button
-          //   onClick={openSideMenu}
+          onClick={openSideMenu}
           className="m-2 p-2 rounded-md transition-all hover:bg-gray-100"
         >
           Menú
