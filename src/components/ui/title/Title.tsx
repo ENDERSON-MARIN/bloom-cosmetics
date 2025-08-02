@@ -1,12 +1,12 @@
 import { titleFont } from "@/config/fonts";
 
-interface Props {
+interface TitleProps {
   title: string;
   subtitle?: string;
   className?: string;
 }
 
-export const Title = ({ title, subtitle, className }: Props) => {
+export const Title = ({ title, subtitle, className }: TitleProps) => {
   return (
     <div className={`mt-3 ${className}`}>
       <h1
